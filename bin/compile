@@ -17,7 +17,7 @@ puts '-----> Found an .oracle.yml'
 ORACLE_CONFIG = YAML.load_file("#{BUILD_DIR}/.oracle.yml")
 
 ORACLE_INSTANT_CLIENT_DIR = 'vendor/oracle_instantclient'.freeze
-ORACLE_INSTANT_CLIENT_URL = 'https://s3-strapi.s3.eu-central-1.amazonaws.com/instantclient_12_1.tgz'.freeze
+ORACLE_INSTANT_CLIENT_URL = 'https://b2bportal2.s3.dtln.ru/instantclient_18_1.tgz?AWSAccessKeyId=1a4fb80933b6d91c2151&Expires=1601240776&Signature=bQbsf1KOc7F17x9RoZksaqucFJU%3D'.freeze
 ORACLE_INSTANT_CLIENT_FILENAME = ORACLE_INSTANT_CLIENT_URL.split(%r{/\//}).last
 
 indent "Making directory #{BUILD_DIR}/#{ORACLE_INSTANT_CLIENT_DIR}"
